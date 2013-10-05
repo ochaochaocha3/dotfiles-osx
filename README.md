@@ -17,6 +17,7 @@ Dotfile が環境依存のため、追加の操作を行う必要があるプロ
     ```bash
     # clone したディレクトリで
     ln -s `pwd`/_vimrc ~/.vimrc
+    ln -s `pwd`/_vim ~/.vim
     ln -s `pwd`/_vimperatorrc ~/.vimperatorrc
     ln -s `pwd`/_gitignore ~/.gitignore
     ```
