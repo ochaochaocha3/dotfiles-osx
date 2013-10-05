@@ -32,7 +32,7 @@ Mac 用 dotfiles。対象プログラムは
 
 3. Vim の設定。
 
-    1. Vim を起動して NeoBundleInstall を実行させる。
+    1. Vim を起動して `NeoBundleInstall` を実行させる。
     2. vimproc の設定。以下を実行する。
 
         ```bash
