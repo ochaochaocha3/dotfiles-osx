@@ -21,7 +21,7 @@ Dotfile が環境依存のため、追加の操作を行う必要があるプロ
     ln -s `pwd`/_gitignore ~/.gitignore
     ```
 
-2. .gitconfig の設定。gitconfig.sh を FIXME の指示通りに修正して、実行する。
+2. .gitconfig の設定。gitconfig.sh を `FIXME` の指示通りに修正して、実行する。
     
     ```bash
     # clone したディレクトリで
