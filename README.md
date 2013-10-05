@@ -6,11 +6,12 @@ Mac 用 dotfiles。対象プログラムは
 * Vimperator
 * Git
 
-Dotfile が環境依存のため、追加の操作を行う必要があるプログラムは
+追加の操作を行う必要があるプログラムは
 
+* Vim
 * Git
 
-環境移行時にすること
+環境移行時に行うこと
 --------------------
 1. 以下を実行して、ホームディレクトリに dotfiles へのシンボリックリンクを配置する。
     
@@ -28,3 +29,13 @@ Dotfile が環境依存のため、追加の操作を行う必要があるプロ
     # clone したディレクトリで
     ./gitconfig.sh
     ```
+
+3. Vim の設定。
+
+    1. Vim を起動して NeoBundleInstall を実行させる。
+    2. vimproc の設定。以下を実行する。
+
+        ```bash
+        cd ~/.vim/bundle/vimproc
+        make -f make_mac.mak
+        ```
