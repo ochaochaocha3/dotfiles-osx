@@ -44,27 +44,38 @@ function! s:CDToFileDir()
     pwd
 endfunction
 
-" " プラグイン（vundle使用）
-" set nocompatible
-" filetype off
+" neobundle.vim によるプラグイン管理
+if has('vim_starting')
+    set nocompatible " Be iMproved
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Recommended to install
+" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+NeoBundle 'Shougo/vimproc'
 " 
-" set rtp+=~/.vim/bundle/vundle/
-" call vundle#rc()
-" 
-" " eregex.vim
-" Bundle "othree/eregex.vim"
-" nnoremap / :M/
-" nnoremap ? :M?
-" nnoremap ,/ /
-" nnoremap ,? ?
-" 
-" " vim-qfreplace
-" Bundle "thinca/vim-qfreplace"
-" 
-" " mediawiki.vim
-" Bundle "vim-scripts/mediawiki.vim"
-" 
-" filetype plugin indent on
+" eregex.vim
+NeoBundle "othree/eregex.vim"
+nnoremap / :M/
+nnoremap ? :M?
+nnoremap ,/ /
+nnoremap ,? ?
+
+" vim-qfreplace
+NeoBundle "thinca/vim-qfreplace"
+
+" mediawiki.vim
+NeoBundle "vim-scripts/mediawiki.vim"
+
+filetype plugin indent on " Required!
+
+" Installation check.
+NeoBundleCheck
 
 " MacVim GUI
 if has('gui_macvim')
