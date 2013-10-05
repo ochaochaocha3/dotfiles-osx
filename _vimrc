@@ -44,27 +44,27 @@ function! s:CDToFileDir()
     pwd
 endfunction
 
-" プラグイン（vundle使用）
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Bundle eregex.vim
-Bundle "othree/eregex.vim"
-nnoremap / :M/
-nnoremap ? :M?
-nnoremap ,/ /
-nnoremap ,? ?
-
-" Bundle vim-qfreplace
-Bundle "thinca/vim-qfreplace"
-
-" Bundle mediawiki.vim
-Bundle "vim-scripts/mediawiki.vim"
-
-filetype plugin indent on
+" " プラグイン（vundle使用）
+" set nocompatible
+" filetype off
+" 
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
+" 
+" " eregex.vim
+" Bundle "othree/eregex.vim"
+" nnoremap / :M/
+" nnoremap ? :M?
+" nnoremap ,/ /
+" nnoremap ,? ?
+" 
+" " vim-qfreplace
+" Bundle "thinca/vim-qfreplace"
+" 
+" " mediawiki.vim
+" Bundle "vim-scripts/mediawiki.vim"
+" 
+" filetype plugin indent on
 
 " MacVim GUI
 if has('gui_macvim')
