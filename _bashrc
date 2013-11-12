@@ -18,3 +18,7 @@ alias l='ls -ACF'
 
 # 英語の man のエイリアス
 alias eman='env LANG=C man'
+
+# GNU Source-highlight
+export LESS='-R'
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
