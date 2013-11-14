@@ -102,10 +102,3 @@ filetype plugin indent on " Required!
 NeoBundleCheck
 
 " ここまで：neobundle.vim によるプラグイン管理
-
-" MacVim GUI
-if has('gui_macvim')
-    set guifont=MigMix\ 2M\ Regular:h16
-    set imdisable
-    colorscheme desert
-endif
