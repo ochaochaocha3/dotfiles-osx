@@ -18,6 +18,7 @@ set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set hlsearch "検索結果のハイライト。消すときは :nohl で。
 " □や○があってもカーソル位置がずれないようにする
 set ambiwidth=double
+syntax on
 
 " 文字コード
 set encoding=utf-8
@@ -59,7 +60,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
-" 
+
 " eregex.vim
 NeoBundle 'othree/eregex.vim'
 nnoremap / :M/
@@ -69,6 +70,10 @@ nnoremap ,? ?
 
 " vim-qfreplace
 NeoBundle 'thinca/vim-qfreplace'
+
+" desert256.vim
+NeoBundle 'desert256.vim'
+colorscheme desert256
 
 " html5.vim
 NeoBundle 'othree/html5.vim'
