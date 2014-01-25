@@ -10,7 +10,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # For gtk-engines
-export GTK_PATH=/usr/local/lib/gtk-2.0
+export GTK_PATH="/usr/local/lib/gtk-2.0"
 
 # Load ~/.bashrc if it exists
 if [ -f ~/.bashrc ] ;then
