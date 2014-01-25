@@ -22,3 +22,11 @@ alias eman='env LANG=C man'
 # GNU Source-highlight
 export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+
+# For rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# For bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi

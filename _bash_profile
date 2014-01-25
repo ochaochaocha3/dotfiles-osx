@@ -1,13 +1,8 @@
 # /usr/local/bin, /usr/local/sbin を優先
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# For rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# For bash-completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
+# rbenv のパスを追加
+export PATH="~/.rbenv/bin:$PATH"
 
 # For gtk-engines
 export GTK_PATH="/usr/local/lib/gtk-2.0"
