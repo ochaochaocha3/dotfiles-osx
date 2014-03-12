@@ -57,37 +57,26 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
 
-" eregex.vim
+NeoBundle 'sudo.vim'
+
 NeoBundle 'othree/eregex.vim'
 nnoremap / :M/
 nnoremap ? :M?
 nnoremap ,/ /
 nnoremap ,? ?
 
-" vim-qfreplace
 NeoBundle 'thinca/vim-qfreplace'
 
-" desert256.vim
 NeoBundle 'desert256.vim'
 colorscheme desert256
 
-" html5.vim
 NeoBundle 'othree/html5.vim'
-
-" vim-css3-syntax
 NeoBundle 'hail2u/vim-css3-syntax'
-
-" JavaScript-syntax
 NeoBundle 'JavaScript-syntax'
-
-" vim-javascript
 NeoBundle 'pangloss/vim-javascript'
-
-" mediawiki.vim
 NeoBundle 'vim-scripts/mediawiki.vim'
 
 filetype plugin indent on " Required!
