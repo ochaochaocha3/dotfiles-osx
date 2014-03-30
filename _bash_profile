@@ -1,3 +1,5 @@
+# vim: filetype=sh
+
 # /usr/local/bin, /usr/local/sbin を優先
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
@@ -9,6 +11,9 @@ export PATH="~/.composer/vendor/bin:$PATH"
 
 # rbenv のパスを追加
 export PATH="~/.rbenv/bin:$PATH"
+
+# gettext のパスを追加
+export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # For gtk-engines
 export GTK_PATH="/usr/local/lib/gtk-2.0"
