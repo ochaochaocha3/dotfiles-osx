@@ -1,7 +1,7 @@
 # vim: filetype=sh
 
-# /usr/local/bin, /usr/local/sbin を優先
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+# ~/bin, /usr/local/bin, /usr/local/sbin を優先
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Homebrew でインストールした PHP のパスを追加
 export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
