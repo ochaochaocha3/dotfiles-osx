@@ -11,6 +11,7 @@ set smartindent
 " 表示
 set wrap
 set showcmd
+set wildmenu
 set number
 set ruler
 set list
