@@ -55,7 +55,7 @@ set showcmd
 set number
 set ruler
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:>-,trail:-,eol:$,extends:>,precedes:<,nbsp:%
 set hlsearch "検索結果のハイライト。消すときは :nohl で。
 " □や○があってもカーソル位置がずれないようにする
 set ambiwidth=double
