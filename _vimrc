@@ -36,6 +36,7 @@ let g:molokai_original=1
 let g:rehash256=1
 colorscheme molokai
 
+NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'hail2u/vim-css3-syntax'
