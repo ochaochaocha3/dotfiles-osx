@@ -31,8 +31,10 @@ nnoremap ,? ?
 
 NeoBundle 'thinca/vim-qfreplace'
 
-NeoBundle 'desert256.vim'
-colorscheme desert256
+NeoBundle 'tomasr/molokai'
+let g:molokai_original=1
+let g:rehash256=1
+colorscheme molokai
 
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'othree/html5.vim'

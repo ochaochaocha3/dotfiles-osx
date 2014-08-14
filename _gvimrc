@@ -1,4 +1,3 @@
 " MacVim GUI
 set guifont=MigMix\ 2M\ Regular:h16
 set imdisable
-colorscheme desert
