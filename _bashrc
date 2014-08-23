@@ -21,6 +21,10 @@ alias l='ls -ACF'
 # 英語の man のエイリアス
 alias eman='env LANG=C man'
 
+# コンパイラ指定 make
+alias make-clang='make CC=clang CXX=clang++'
+alias make-gcc='make CC=gcc-4.8 CXX=g++-4.8'
+
 # GNU Source-highlight
 export LESS='-R'
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
