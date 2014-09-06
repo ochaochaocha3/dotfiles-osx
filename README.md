@@ -40,9 +40,3 @@ Homebrew と Git は設定済みとする。
     ```
 5. Vim の設定。
     1. Vim を起動して `NeoBundleInstall` を実行させる。
-    2. vimproc の設定。以下を実行する。
-
-        ```bash
-        cd ~/.vim/bundle/vimproc
-        make -f make_mac.mak
-        ```
