@@ -4,18 +4,23 @@
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Homebrew でインストールした PHP のパスを追加
-export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
 
-# Composer のパスを追加
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+if PHP56_PREFIX=`brew --prefix homebrew/php/php56 2>/dev/null`; then
+  export PATH="$PHP56_PREFIX/bin:$PATH"
+
+  # Composer のパスを追加
+  export PATH="$HOME/.composer/vendor/bin:$PATH"
+fi
 
 # gettext のパスを追加
-export PATH="/usr/local/opt/gettext/bin:$PATH"
+if GETTEXT_PREFIX=`brew --prefix gettext 2>/dev/null`; then
+  export PATH="$GETTEXT_PREFIX/bin:$PATH"
+fi
 
 # For gtk-engines
 export GTK_PATH="/usr/local/lib/gtk-2.0"
 
 # Load ~/.bashrc if it exists
-if [ -f ~/.bashrc ] ;then
-    source ~/.bashrc
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
 fi
