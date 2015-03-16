@@ -4,6 +4,7 @@ pry
 yard
 rspec
 rubocop
+gist
 
 # Web developing
 passenger
