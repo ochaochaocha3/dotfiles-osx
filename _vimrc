@@ -65,6 +65,13 @@ let g:quickrun_config = {
 \   },
 \ }
 
+NeoBundle 'lambdalisue/vim-gista', {
+    \ 'depends': [
+    \    'Shougo/unite.vim',
+    \    'tyru/open-browser.vim',
+    \]}
+let g:gista#github_user = 'ochaochaocha3'
+
 NeoBundle 'Shougo/neocomplete.vim'
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
