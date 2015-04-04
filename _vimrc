@@ -48,11 +48,13 @@ let g:rehash256=1
 colorscheme molokai
 
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle "scrooloose/syntastic"
 NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'othree/html5.vim'
+NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'JavaScript-syntax'
-NeoBundle 'pangloss/vim-javascript'
+NeoBundleLazy 'pangloss/vim-javascript',
+    \ { 'autoload': { 'filetypes': ['javascript'] } }
 NeoBundle 'vim-scripts/mediawiki.vim'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
@@ -73,6 +75,8 @@ NeoBundle 'lambdalisue/vim-gista', {
 let g:gista#github_user = 'ochaochaocha3'
 
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'mattn/jscomplete-vim'
+
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
@@ -103,7 +107,7 @@ inoremap <expr><C-y>  neocomplete#close_popup()
 inoremap <expr><C-e>  neocomplete#cancel_popup()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=jscomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplete#sources#omni#input_patterns')
