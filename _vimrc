@@ -1,12 +1,19 @@
 " vim: filetype=vim
 
 " neobundle.vim によるプラグイン管理
+
+" Note: Skip initialization for vim-tiny or vim-small.
+if !1 | finish | endif
+
 if has('vim_starting')
+  if &compatible
     set nocompatible " Be iMproved
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
+  endif
+
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -43,9 +50,6 @@ nnoremap ,? ?
 NeoBundle 'thinca/vim-qfreplace'
 
 NeoBundle 'tomasr/molokai'
-let g:molokai_original=1
-let g:rehash256=1
-colorscheme molokai
 
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle "scrooloose/syntastic"
@@ -115,6 +119,8 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+call neobundle#end()
+
 filetype plugin indent on " Required!
 
 " Installation check.
@@ -136,6 +142,10 @@ set smartindent
 set backspace=indent,eol,start
 
 " 表示
+let g:molokai_original=1
+let g:rehash256=1
+colorscheme molokai
+
 set wrap
 set showcmd
 set number
