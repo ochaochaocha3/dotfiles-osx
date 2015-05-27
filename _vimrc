@@ -54,6 +54,22 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle "scrooloose/syntastic"
 NeoBundle 'ngmy/vim-rubocop'
+
+NeoBundleLazy 'vim-jp/cpp-vim', {
+      \ 'autoload' : {'filetypes' : 'cpp'}
+      \ }
+
+if executable("clang++")
+  let g:syntastic_cpp_compiler = 'clang++'
+  let g:syntastic_cpp_compiler_options = '--std=c++11 --stdlib=libc++'
+  let g:quickrun_config = {}
+  let g:quickrun_config['cpp/clang++11'] = {
+        \ 'cmdopt': '--std=c++11 --stdlib=libc++',
+        \ 'type': 'cpp/clang++'
+        \ }
+  let g:quickrun_config['cpp'] = {'type': 'cpp/clang++11'}
+endif
+
 NeoBundle 'othree/html5.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
