@@ -70,6 +70,10 @@ if executable("clang++")
   let g:quickrun_config['cpp'] = {'type': 'cpp/clang++11'}
 endif
 
+NeoBundleLazy 'vim-erlang/vim-erlang-runtime'
+NeoBundleLazy 'vim-erlang/vim-erlang-omnicomplete'
+autocmd FileType erlang NeoBundleSource 'vim-erlang-complete', 'vim-erlang-omnicomplete'
+
 NeoBundle 'othree/html5.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
