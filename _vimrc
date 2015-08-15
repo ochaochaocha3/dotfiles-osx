@@ -3,7 +3,7 @@
 " neobundle.vim によるプラグイン管理
 
 " Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
+if 0 | endif
 
 if has('vim_starting')
   if &compatible
