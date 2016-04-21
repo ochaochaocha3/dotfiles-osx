@@ -23,7 +23,7 @@ mediawiki-gateway
 rubypress
 twitter
 cinch
-activesupport
+rails
 
 # Game developing
 gosu
