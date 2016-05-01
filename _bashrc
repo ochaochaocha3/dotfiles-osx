@@ -27,6 +27,8 @@ alias eman='env LANG=C man'
 alias make-clang='make CC=clang CXX=clang++'
 alias make-gcc='make CC=gcc-4.8 CXX=g++-4.8'
 
+alias ggrep='ggrep --color'
+
 alias be='bundle exec'
 
 # GNU Source-highlight

@@ -28,6 +28,9 @@ fi
 export FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
 export PATH=$PATH:$FIREBIRD_HOME/bin
 
+# For Flex
+export PATH="$HOME/flex-3.6.0/bin:$PATH"
+
 # Load ~/.bashrc if it exists
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
