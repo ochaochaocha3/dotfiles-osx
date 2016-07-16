@@ -82,6 +82,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundleLazy 'pangloss/vim-javascript',
     \ { 'autoload': { 'filetypes': ['javascript'] } }
+NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vim-scripts/mediawiki.vim'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
@@ -92,6 +93,10 @@ let g:quickrun_config = {
 \     'runner': 'vimproc',
 \     'runner/vimproc/updatetime': 60
 \   },
+\   'tex': {
+\     'command': 'latexmk',
+\     'exec': ['%c --gg -pdfdvi %s', 'open -ga /Applications/Skim.app %s:r.pdf']
+\   }
 \ }
 
 NeoBundle 'lambdalisue/vim-gista', {
@@ -163,6 +168,8 @@ set expandtab
 set autoindent
 set smartindent
 set backspace=indent,eol,start
+
+let g:tex_flavor = 'latex'
 
 " 表示
 let g:molokai_original=1

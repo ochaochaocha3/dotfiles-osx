@@ -5,6 +5,9 @@ yard
 rspec
 rubocop
 gist
+lumberjack
+serialport
+xbee-ruby
 
 # Web developing
 passenger
@@ -24,6 +27,7 @@ rubypress
 twitter
 cinch
 rails
+serverengine
 
 # Game developing
 gosu
