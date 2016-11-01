@@ -24,17 +24,15 @@ if which go > /dev/null; then
   export GOPATH="$HOME/gocode"
 fi
 
+# For Java
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # For Firebird
 export FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
 export PATH=$PATH:$FIREBIRD_HOME/bin
 
 # For Flex
 export PATH="$HOME/flex-3.6.0/bin:$PATH"
-
-# Load ~/.bashrc if it exists
-if [ -f ~/.bashrc ]; then
-  source ~/.bashrc
-fi
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Users/kosuke/Documents/cpp/cocos2d-x-3.12/tools/cocos2d-console/bin
@@ -51,3 +49,17 @@ export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 # Add environment variable ANT_ROOT for cocos2d-x
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.7/bin
 export PATH=$ANT_ROOT:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# For Qt
+export PATH="$HOME/Qt/5.5/clang_64/bin:$PATH"
+
+# For Android development
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+
+# Load ~/.bashrc if it exists
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
