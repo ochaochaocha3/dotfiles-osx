@@ -1,0 +1,98 @@
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+
+  inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ deoplete#mappings#manual_complete()
+  function! s:check_back_space() abort "{{{
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+  endfunction"}}}
+
+  "inoremap <expr><C-h>
+  "\ deoplete#smart_close_popup()."\<C-h>"
+  "inoremap <expr><BS>
+  "\ deoplete#smart_close_popup()."\<C-h>"
+'''
+
+[[plugins]]
+repo = 'vim-scripts/sudo.vim'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'bling/vim-airline'
+hook_add = '''
+  set laststatus=2
+'''
+
+[[plugins]]
+repo = 'othree/eregex.vim'
+hook_add = '''
+  nnoremap / :M/
+  nnoremap ? :M?
+  nnoremap ,/ /
+  nnoremap ,? ?
+'''
+
+[[plugins]]
+repo = 'thinca/vim-qfreplace'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'vim-erlang/vim-erlang-runtime'
+on_ft = 'erlang'
+
+[[plugins]]
+repo = 'vim-erlang/vim-erlang-omnicomplete'
+on_ft = 'erlang'
+
+[[plugins]]
+repo = 'jeroenbourgois/vim-actionscript'
+hook_add = '''
+  au BufNewFile,BufRead *.as setf actionscript
+'''
+on_ft = 'actionscript'
+
+[[plugins]]
+repo = 'othree/html5.vim'
+on_ft = 'html'
+
+[[plugins]]
+repo = 'hail2u/vim-css3-syntax'
+on_ft = 'css'
+
+[[plugins]]
+repo = 'jelera/vim-javascript-syntax',
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = 'coffee'
+
+[[plugins]]
+repo = 'chikamichi/mediawiki.vim'
+on_ft = 'mediawiki'
+
+[[plugins]]
+repo = 'artur-shaik/vim-javacomplete2'
+on_ft = 'java'
