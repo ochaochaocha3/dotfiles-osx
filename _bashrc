@@ -28,6 +28,7 @@ alias make-clang='make CC=clang CXX=clang++'
 alias make-gcc='make CC=gcc-4.8 CXX=g++-4.8'
 
 alias ggrep='ggrep --color'
+alias vim='nvim'
 
 alias be='bundle exec'
 
@@ -44,3 +45,6 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+# OpenCV 3
+export PKG_CONFIG_PATH='/usr/local/opt/opencv3/lib/pkgconfig'
