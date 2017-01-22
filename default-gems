@@ -3,14 +3,12 @@ bundler
 pry
 yard
 rspec
-rubocop
 gist
 lumberjack
 serialport
 xbee-ruby
 
 # Web developing
-passenger
 nokogiri
 haml
 sass
@@ -21,13 +19,21 @@ font-awesome-sass
 compass
 mechanize
 middleman
-net-irc
-mediawiki-gateway
 rubypress
 twitter
 cinch
 rails
 serverengine
+mechanize
+mediawiki_api
+sinatra
+sinatra-contrib
+sinatra-cross_origin
+thin
+
+# DodontoF
+net-irc
+msgpack
 
 # Game developing
 gosu

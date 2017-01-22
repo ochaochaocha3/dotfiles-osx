@@ -1,3 +1,3 @@
 #!/bin/bash
 
-RUBY_CONFIGURE_OPTS="--disable-install-rdoc --enable-shared" rbenv install $1
+MAKEOPTS='-j9' RUBY_CONFIGURE_OPTS='--enable-shared' rbenv install --verbose $1
