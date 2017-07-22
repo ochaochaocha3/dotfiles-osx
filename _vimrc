@@ -74,6 +74,8 @@ NeoBundleLazy 'vim-erlang/vim-erlang-runtime'
 NeoBundleLazy 'vim-erlang/vim-erlang-omnicomplete'
 autocmd FileType erlang NeoBundleSource 'vim-erlang-complete', 'vim-erlang-omnicomplete'
 
+NeoBundle 'elixir-lang/vim-elixir'
+
 NeoBundle 'jeroenbourgois/vim-actionscript'
 au BufNewFile,BufRead *.as setf actionscript
 

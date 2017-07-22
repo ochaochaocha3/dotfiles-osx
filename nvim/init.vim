@@ -9,17 +9,21 @@ endif
 " Required:
 set runtimepath+=~/.config/nvim/dein/repos/github.com/Shougo/dein.vim
 
-" Required:
-call dein#begin('~/.config/nvim/dein')
-
-" Let dein manage dein
-" Required:
-call dein#add('Shougo/dein.vim')
-
-call dein#load_toml('~/.config/nvim/plugins.toml', {})
 
 " Required:
-call dein#end()
+if dein#load_state('~/.config/nvim/dein')
+  call dein#begin('~/.config/nvim/dein')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
+
+  call dein#load_toml('~/.config/nvim/plugins.toml', {})
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
 
 " Required:
 filetype plugin indent on
