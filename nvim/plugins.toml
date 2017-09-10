@@ -102,3 +102,11 @@ on_ft = 'mediawiki'
 [[plugins]]
 repo = 'artur-shaik/vim-javacomplete2'
 on_ft = 'java'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'maralla/vim-toml-enhance'
+on_ft = 'toml'
