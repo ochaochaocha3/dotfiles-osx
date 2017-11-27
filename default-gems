@@ -2,27 +2,14 @@
 bundler
 pry
 yard
-rspec
 gist
 lumberjack
-serialport
-xbee-ruby
 
 # Web developing
 nokogiri
-haml
-sass
 rb-fsevent
-erubis
-bootstrap-sass
-font-awesome-sass
-compass
 mechanize
-middleman
-rubypress
-twitter
 cinch
-rails
 serverengine
 mechanize
 mediawiki_api
@@ -34,7 +21,3 @@ thin
 # DodontoF
 net-irc
 msgpack
-
-# Game developing
-gosu
-chingu
