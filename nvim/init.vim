@@ -45,7 +45,7 @@ set tabstop=4
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set cinoptions=:0,g0,(0,m1,j1,J1
+set cinoptions=:0,g0,(1s,m1,j1,J1
 set backspace=indent,eol,start
 
 let g:tex_flavor = 'latex'
