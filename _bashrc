@@ -47,4 +47,4 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # OpenCV 3
-export PKG_CONFIG_PATH='/usr/local/opt/opencv3/lib/pkgconfig'
+#export PKG_CONFIG_PATH='/usr/local/opt/opencv3/lib/pkgconfig'
