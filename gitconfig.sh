@@ -6,7 +6,7 @@
 # git config --global user.email "Your email"
 
 # Git で使用するエディタの設定
-git config --global core.editor 'vim -c "set fenc=utf-8"'
+git config --global core.editor 'nvim -c "set fenc=utf-8"'
 
 # すべてのリポジトリで無視するパターンの登録
 git config --global core.excludesfile "~/.gitignore"
