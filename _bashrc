@@ -50,3 +50,8 @@ fi
 
 # OpenCV 3
 #export PKG_CONFIG_PATH='/usr/local/opt/opencv3/lib/pkgconfig'
+
+# direnv
+if which direnv > /dev/null; then
+  eval "$(direnv hook bash)"
+fi
