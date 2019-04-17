@@ -3,23 +3,17 @@
 # ~/bin, /usr/local/bin, /usr/local/sbin を優先
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Homebrew でインストールした PHP のパスを追加
-
-if PHP56_PREFIX=`brew --prefix homebrew/php/php56 2>/dev/null`; then
-  export PATH="$PHP56_PREFIX/bin:$PATH"
-
-  # Composer のパスを追加
-  export PATH="$HOME/.composer/vendor/bin:$PATH"
-fi
-
 # gettext のパスを追加
-if GETTEXT_PREFIX=`brew --prefix gettext 2>/dev/null`; then
-  export PATH="$GETTEXT_PREFIX/bin:$PATH"
+GETTEXT_PATH="/usr/local/opt/gettext/bin"
+if [ -d $GETTEXT_PATH ]
+then
+  export PATH="$GETTEXT_PATH:$PATH"
 fi
 
 # For gtk-engines
 export GTK_PATH="/usr/local/lib/gtk-2.0"
 
+# For golang
 if which go > /dev/null; then
   export GOPATH="$HOME/gocode"
 fi
@@ -27,37 +21,20 @@ fi
 # For Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-# For Firebird
-export FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
-export PATH=$PATH:$FIREBIRD_HOME/bin
-
 # For Flex
 export PATH="$HOME/flex-3.6.0/bin:$PATH"
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/kosuke/Documents/cpp/cocos2d-x-3.12/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT=/Users/kosuke/Documents/cpp
-export PATH=$COCOS_X_ROOT:$PATH
-
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/kosuke/Documents/cpp/cocos2d-x-3.12/templates
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
-# Add environment variable ANT_ROOT for cocos2d-x
-export ANT_ROOT=/usr/local/Cellar/ant/1.9.7/bin
-export PATH=$ANT_ROOT:$PATH
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# For Qt
-export PATH="$HOME/Qt/5.5/clang_64/bin:$PATH"
-
 # For Android development
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+
+# For MySQL 5.7
+MYSQL57_PATH="/usr/local/opt/mysql@5.7/bin"
+if [ -d $MYSQL57_PATH ]
+then
+  export PATH="$MYSQL57_PATH:$PATH"
+  export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+  export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+fi
 
 # Load ~/.bashrc if it exists
 if [ -f ~/.bashrc ]; then
