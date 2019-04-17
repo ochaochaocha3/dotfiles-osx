@@ -65,6 +65,7 @@ set hlsearch "検索結果のハイライト。消すときは :nohl で。
 " □や○があってもカーソル位置がずれないようにする
 set ambiwidth=double
 set wildmenu
+set inccommand=split
 syntax on
 
 " 文字コード
