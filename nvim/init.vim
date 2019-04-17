@@ -50,6 +50,13 @@ set backspace=indent,eol,start
 
 let g:tex_flavor = 'latex'
 
+" 句読点を「，．」に置換する
+nnoremap <Leader>p :silent! %s/、/，/g<CR>:silent! %s/。/．/g<CR>
+
+" TeXのインデント設定
+let g:tex_indent_brace=0
+let g:tex_indent_items=0
+
 " 表示
 set termguicolors
 
