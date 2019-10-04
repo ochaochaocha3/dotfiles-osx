@@ -144,3 +144,7 @@ repo = 'rhysd/git-messenger.vim'
 
 [[plugins]]
 repo = 'lambdalisue/suda.vim'
+
+[[plugins]]
+repo = 'jasontbradshaw/pigeon.vim'
+on_ft = 'pigeon'
