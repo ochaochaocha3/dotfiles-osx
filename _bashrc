@@ -34,10 +34,6 @@ alias be='bundle exec'
 
 export EDITOR=nvim
 
-# GNU Source-highlight
-export LESS='-R'
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-
 # For rbenv
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)"
