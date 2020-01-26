@@ -39,6 +39,11 @@ if which rbenv > /dev/null; then
   eval "$(rbenv init -)"
 fi
 
+# For nodenv
+if which nodenv > /dev/null; then
+  eval "$(nodenv init -)"
+fi
+
 # For bash-completion
 BASH_COMPLETION_PATH="/usr/local/etc/bash_completion"
 if [ -f $BASH_COMPLETION_PATH ]
