@@ -2,3 +2,5 @@
 *.swp
 .netrw*
 *.netrw*
+.Rhistory
+.RData
