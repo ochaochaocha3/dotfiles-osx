@@ -45,6 +45,13 @@ if [ -d $TEXLIVE_PATH ]; then
   export PATH="${TEXLIVE_PATH}/bin/x86_64-darwin:${PATH}"
 fi
 
+# For Rust development
+CARGO_PATH="$HOME/.cargo/bin"
+if [ -d $CARGO_PATH ]
+then
+  export PATH="$CARGO_PATH:$PATH"
+fi
+
 # Load ~/.bashrc if it exists
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
