@@ -1,23 +1,5 @@
 # Developing
 bundler
-pry
 yard
-gist
-lumberjack
-
-# Web developing
-nokogiri
-rb-fsevent
-mechanize
-cinch
-serverengine
-mechanize
-mediawiki_api
-sinatra
-sinatra-contrib
-sinatra-cross_origin
-thin
-
-# DodontoF
-net-irc
-msgpack
+rspec
+rubocop
